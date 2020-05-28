@@ -163,7 +163,8 @@ pub enum Transmitter {
     C9000,
     Raspager,
     Raspager2,
-    RFM69
+    RFM69,
+    CC1101
 }
 
 impl Default for Transmitter {
@@ -181,6 +182,7 @@ impl fmt::Display for Transmitter {
             Transmitter::Raspager => "Raspager1",
             Transmitter::Raspager2 => "Raspager2",
             Transmitter::RFM69 => "RFM69",
+            Transmitter::CC1101 => "CC1101",
         };
         write!(f, "{}", name)
     }
